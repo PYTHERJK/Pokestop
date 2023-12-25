@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokestop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          src="assets/pokemon_logo.png"
+          class="pokemom__logo"
+          alt="logo-pokemom"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="pokestop">
+          <div class="pokebola">
+            <img
+              src="assets/pokebola.png"
+              class="pokebola__image"
+              alt="pokebola-vermelha-e-branca"
+              onclick="getPokemom()"
+            />
+          </div>
+          <div class="pokemom">
+            
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">Desenvolvido por Allan Pyther</p>
+      </div>
+    </footer>
+  </body>
+  <script src="scrip.js"></script>
+</html>

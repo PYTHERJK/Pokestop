@@ -1,0 +1,152 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --gray-900: #25252b;
+    --white-900: #fff;
+    --gray-100: #efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a {
+    /* herda a cor do elemento pai */
+    color: inherit;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--gray-100);
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+/* header */
+.header {
+    background-color: var(--gray-900);
+    text-align: center;
+    height: 8rem;
+}
+
+.pokemom__logo {
+    width: 300px;
+}
+
+/* header */
+
+/* pokebola */
+
+.pokebola {
+    width: 250px;
+}
+
+.pokebola__image {
+    width: 100%;
+    cursor: pointer;
+    /* elemento 3d */
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5))
+}
+
+/* quando for clicada */
+
+.pokebola__image:active {
+    animation: shake 0.1s;
+    animation-iteration-count: 200;
+}
+
+/* keyframe para a tremida da pokebola */
+@keyframes shake {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 10px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -10px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+/* pokestop */
+.pokestop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    min-height: calc(100vh - 8rem - 52px);
+}
+
+/* pokemom */
+
+.pokemom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: linear-gradient(45deg, #ffeb3b, #ff9800);
+    color: var(--white-900);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5))
+}
+
+.pokemom__wrapper__imagem {
+    width: 250px;
+    height: 250px;
+    background-color: var(--gray-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemom__image {
+    width: 100%;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5))
+}
+
+.pokemom__name {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pokemom__abilities {
+    text-transform: capitalize;
+    margin-left: 18px;
+}
+
+/* footer */
+.footer {
+    height: 52px;
+    background-color: var(--gray-900);
+    color: var(--white-900);
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
